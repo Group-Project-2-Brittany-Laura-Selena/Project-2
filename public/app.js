@@ -2,7 +2,7 @@ var mysql = require("mysql");
 
 
 
-var URL = 
+var URL = www.google.com 
 
 $(document).ready(function(){
 
