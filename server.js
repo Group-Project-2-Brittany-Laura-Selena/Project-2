@@ -8,6 +8,14 @@ var db = require("./models");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+var connection = mysql.createConnection({
+  host: "localhost",
+  port: 3307,
+  user: "root",
+  password: "root",
+  database: "project2_db"
+});
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
