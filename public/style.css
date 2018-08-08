@@ -24,3 +24,15 @@ h5{
 .form-control{
     length: 30%;
 }
+
+#map {
+    height: 480px;
+    width: 100%;
+    margin: 25px;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Local Talent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/Project-2/public/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./style.css"/>
     <script src="main.js"></script>
   </head>
 
@@ -51,7 +51,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <input class="form-control mr-sm-2" id="pac-input" type="search" placeholder="Search" aria-label="Search">
                <br>
                <br>
             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -59,12 +59,15 @@
         </div>
         <div class="col-md-2"></div>
       </div>
+      <div id="map">
 
+      </div>
+    
     </div>
 <br>
 <br>
 
-    <!-- <div class="row">
+    <div class="row">
       <div class="col-md-7"></div>
       <div class="col-md-4">
         <form>
@@ -86,9 +89,17 @@
       </div>
       <div class="col-md-1">
       </div>
-    </div> -->
+    </div>
+    <!-- google map div -->
+    <div id="map"></div>
 
-
+    <!-- link to google api  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsjxz2CIotOdZpegIeV3PDBWDK9N88pDQ&callback=initMap&callback=initAutocomplete&libraries=places"
+             async defer></script>
+    <!-- links to our js files that house map code -->
+    <script src="../controller/google_autocomplete.js"></script>
+    <script src="../controller/google_api.js"></script>
+    
   </body>
 
   </html>
