@@ -29,14 +29,15 @@ module.exports = function(app) {
 
   app.get("/", function (req, res) {
     if (req.user) {
-      db.User.findAll({}).then(function (dbUsers) {
+      db.User.findAll({}).then(function (dbUsers) 
+      {
         res.render("home", {
           msg: "Welcome!",
           users: dbUsers
         });
       });
     } else {
-      res.redirect("/login");
+      console.log("home not found");
     }
   });
 
@@ -80,4 +81,5 @@ module.exports = function(app) {
 
   });
 
-};
+});
+}
