@@ -10,6 +10,12 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
 
 //new master
+app.get("/home", function(req, res) {
+if (req,user) {
+  res.redirect("/");
+  res.render("home")
+}
+});
   app.get("/signup", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -80,4 +86,4 @@ module.exports = function(app) {
 
   });
 
-};
+  };
