@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/modal.css" />
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+
+<div class="modal" id="mymodal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content"> 
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="col col_12 iamgurdeep-pic" style="display: flex; justify-content: center;">
+                        <img class="img-responsive user" alt="user" src="../images/people-2561506.jpg" height="500" width="766">
+                        <div class="edit-pic">
+                        </div>
+                        <div class="username">
+                            <h2> handlebars pulls name from db <small><i class="fa fa-map-marker"></i> </small></h2>
+                            <p><i class="fa fa-briefcase"></i> handlebars pulls specialty from db</p>
+                            <p><i class="fa fa-briefcase"></i> handlebars pulls location from db</p>
+                            
+                            <a href="https://web.facebook.com" target="_blank" class="btn-o"> <i class="fa fa-user-plus"></i> FACEBOOK </a>
+                            <a href="https://www.instagram.com" target="_blank"  class="btn-o"> <i class="fa fa-plus"></i> INSTAGRAM </a>
+                            <a href="https://www.twitter.com" target="_blank"  class="btn-o"> <i class="fa fa-plus"></i> TWITTER </a>
+                            <a href="https://www.youtube.com" target="_blank"  class="btn-o"> <i class="fa fa-plus"></i> YOUTUBE </a>
+                            <a href="mailto:user@gmail.com" class="btn-o"> <i class="fa fa-plus"></i> CONTACT ME </a>
+                            <a href="https://www.google.com" target="_blank" class="btn-o"> <i class="fa fa-plus"></i> WEBSITE </a>
+                        </div> 
+                    </div>
+                    
+                    <div class="ui-accordian" id="accordion">
+                            <h3 class="ui-accordion-header ui-accordion-header-active ui-accordion-header-icon">BIO</h3>
+                            <div class="ui-accordion-content ui-accordion-content-active">
+                              <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+                              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+                              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+                              Nam mi. Proin viverra leo ut odio.</p>
+                            </div>
+                            <h3 class="ui-accordion-header ui-accordion-header-active ui-accordion-header-icon">UPCOMING EVENTS</h3>
+                            <div class="ui-accordion-content ui-accordion-content-active">
+                              <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+                              Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+                              faucibus interdum tellus libero ac justo.</p>
+                            </div>
+                            <h3 class="ui-accordion-header ui-accordion-header-active ui-accordion-header-icon">RATES</h3>
+                            <div class="ui-accordion-content ui-accordion-content-active">
+                              <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+                              Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+                              <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div><!--end modal-content-->
+    </div><!--end modal-dialog-->
+</div><!--end modal-->
+<a href="#" data-toggle="modal" data-target="#mymodal">Try Me</a>
+
+<script>
+    $("#accordion").accordion();
+</script>
+</body>
+</html>
